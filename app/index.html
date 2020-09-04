@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop-berry</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="popup-form scr_popup-fo">
+      <div class="popup-form-inner scr_popup-in">
+        <div class="popur-form-closed scr_popup-cl"></div>
+        <div class="popur-form-title"><span>Оставить заявку</span></div>
+        <form action="/" class="form scr_fo">
+          <div class="form-filds scr_form-fi">
+            <div class="fild-contener scr_fi-con">
+              <div class="fild-error scr_fi-er">
+                <span class="fild-error-one scr_fi-er-one"></span>
+              </div>
+              <div class="fild scr_fi">
+                <input type="text" placeholder="Введите имя" class="input-all src_in-all" data-validatio="name" />
+              </div>
+            </div>
+            <div class="fild-contener scr_fi-con">
+              <div class="fild-error scr_fi-er">
+                <span class="fild-error-two scr_fi-er-two"></span>
+              </div>
+              <div class="fild scr_fi">
+                <input type="text" placeholder="Ваш телефон: xxx-xx-xx" class="input-all src_in-all" data-validatio="phone" />
+              </div>
+            </div>
+            <div class="fild-contener scr_fi-con">
+              <div class="fild-error scr_fi-er">
+                <span class="fild-error-three scr_fi-er-three"></span>
+              </div>
+              <div class="fild scr_fi">
+                <input type="text" placeholder="Ваш mail@mail.ru" class="input-all src_in-all" data-validatio="email" />
+              </div>
+            </div>
+            <div class="fild-contener-btn src_con-btn">
+              <button>Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="icon-call_me">
+      <div class="circle_out"></div>
+      <div class="icon-phone">
+        <div class="icon"></div>
+        <a href="" class="cross-form"></a>
+      </div>
+      <div class="circle_in"></div>
+    </div>
+    <!-- header -->
+    <header class="header">
+      <div class="header__wrapper-top section">
+        <div class="header__wrapper-menu-mobile-bth"></div>
+        <div class="header__wrapper-logo">
+          <div class="header__wrapper-logo-inner"><img src="images/logo.png" alt="" /></div>
+        </div>
+        <div class="clear"></div>
+        <div class="header__wrapper-menu-phone">
+          <div class="header__wrapper-callback">
+            <div class="header-callback">
+              <button class="header-top-btn popup-btn"><span>Перезвони мне</span></button>
+              <span class="header-phone"><a href="tel:+78003332233">8(800)333-22-33</a></span>
+            </div>
+          </div>
+          <div class="header__wrapper-menu">
+            <nav class="scrool">
+              <ul class="menu">
+                <li class="menu-item"><a class="btn-menu" href="index.html"><div class="fa-menu"></div>ГЛАВНАЯ</a>
+                </li>
+                <li class="menu-item catalog-menu">
+                  <a class="btn-menu" href="catalog.html"><div class="fa-menu"></div>КАТАЛОГ</a>
+                  <ul class="submenu">
+                    <li><a href="">ГРИБЫ</a></li>
+                    <li class="submenu-berry"><a href="">ЯГОДА</a>
+                    <ul class="submenu-berry-list">
+                    <li>Клубника</li>
+                    <li>Земляника</li></ul>
+                    </li>
+                    <li><a href="">ФРУКТЫ</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a class="btn-menu" href="terms.html"><div class="fa-menu"></div>УСЛОВИЯ ПОКУПКИ</a>
+                </li>
+                <li class="menu-item"><a class="btn-menu" href="company.html"><div class="fa-menu"></div>О НАШЕЙ КОМПАНИИ</a>
+                </li>
+                <li class="menu-item"><a class="btn-menu" href="contact.html"><div class="fa-menu"></div>КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__wrapper-menu-mobile">
+            <div class="header__wrapper-logo-mobile"><img src="images/logo.png" alt="" /></div>
+            <div class="menu-mobile">
+              <nav class="scroll">
+                <ul class="menu-mobile-list">
+                  <li class="menu-item-mobile"><a href="">ГЛАВНАЯ</a></li>
+                  <li class="menu-item-mobile"><a href="">КАТАЛОГ</a></li>
+                  <li class="menu-item-mobile"><a href="">УСЛОВИЯ ПОКУПКИ</a></li>
+                  <li class="menu-item-mobile"><a href="">О НАШЕЙ КОМПАНИИ</a></li>
+                  <li class="menu-item-mobile"><a href="">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__wallpaper">
+        <div class="header__wrapper-bottom section">
+          <div class="header__wrapper-bottom-title">
+            <h1>
+              Интернет магазин <br />
+              ягод с доставкой на дом
+            </h1>
+          </div>
+          <div class="header__wrapper-bottom-subtitle">
+            <span class="header-subtitle">Осуществляем доставку по всей территории России</span>
+          </div>
+          <div class="header__wallpaper-callback">
+            <div class="header-wallpaper-callback"><button class="header-bottom-btn popup-btn">Сделать заказ</button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- home-discount -->
+      <section class="discount main-section">
+        <div class="discount__inner">
+          <div class="discount__inner-pictur"><img src="images/discount.jpg" alt="" /></div>
+          <div class="discount__inner-content">
+            <div class="discount__inner-content-title">
+              <h2>Скидка на первый заказ - 10%</h2>
+            </div>
+            <div class="discount__inner-content-text">
+              <p>
+                Покупатель, который оформляет заказ в нашем магазине впервые, может воспользоваться скидкой в размере 10%. Скидка действует на все виды ягод,
+                кроме исключений. К исключениям относятся ягоды, которые находятся в категории "Популярное".​​​​​​​
+              </p>
+            </div>
+            <div class="discount__inner-content-subtext">
+              <span>Успейте сделать заказ. Предложение ограничено!</span>
+            </div>
+            <div class="discount__inner-content-callback">
+              <button class="btn-callback popup-btn">Хочу получить скидку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clear"></div>
+      <!-- home-advantages -->
+      <section class="advantages main-section">
+        <div class="advantages__inner">
+          <div class="advantages__inner-content title-section">
+            <div class="advantages__inner-content-title">
+              <h2>Наши преимущества</h2>
+            </div>
+            <div class="advantages__inner-content-subtitle">
+              <span>Почему тысячи клиентов выбирают наш магазин</span>
+            </div>
+          </div>
+          <div class="advantages__inner-info_graphics">
+            <div class="advantages__inner-info_graphics-item">
+              <div class="info_graphics-item-icon-1"></div>
+              <div class="info_graphics-item-title"><h3>Контроль качества</h3></div>
+              <div class="info_graphics-item-text">
+                <p>
+                  Все товары без исключения<br />
+                  проходят проверку на складе
+                </p>
+              </div>
+            </div>
+            <div class="advantages__inner-info_graphics-item">
+              <div class="info_graphics-item-icon-2"></div>
+              <div class="info_graphics-item-title"><h3>Скидки постоянным клиентам</h3></div>
+              <div class="info_graphics-item-text">
+                <p>
+                  В нашем магазине предусмотрены<br />
+                  скидки для постоянных клиентов
+                </p>
+              </div>
+            </div>
+            <div class="advantages__inner-info_graphics-item">
+              <div class="info_graphics-item-icon-3"></div>
+              <div class="info_graphics-item-title"><h3>Оплата при получении</h3></div>
+              <div class="info_graphics-item-text">
+                <p>
+                  Будьте уверены в качестве<br />
+                  посадочного материала
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- home-prosucts -->
+      <section class="products main-section">
+        <div class="products__inner">
+          <div class="products__inner-content title-section">
+            <div class="products__inner-content-title">
+              <h2>Популярные ягоды со скидкой 30%</h2>
+            </div>
+            <div class="products__inner-content-subtitle">
+              <span>Виды ягод, которые чаще всего покупают</span>
+            </div>
+          </div>
+          <div class="products__inner-info">
+            <div class="products__inner-info-item scr_pr-in-item">
+              <div class="products__inner-info-icon scr_pr-in-icon"><img src="images/home-prod-1.jpg" alt=""></div>
+              <div class="products__inner-info-title"><h3>Облепиха свежая</h3></div>
+              <div class="products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим, мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="products__inner-info-price">
+                <div class="old-price"><span>300 руб.</span></div>
+                <div class="new-price"><span>210 руб.</span></div>
+              </div>
+              <div class="products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra scr_pr-wp-extra">
+             <div class="products__inner-info-extra">
+              <div class="closed"></div>
+              <div class="info-extra-left">
+                <img src="images/home-prod-1.jpg" alt="">
+              </div>
+              <div class="info-extra-right">
+                <div class="info-extra-title"><h3>Облепиха свежая</h3></div>
+                <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                <div class="info-extra-list"><ul>
+                  <li>свойства товара,</li>
+                  <li>параметры товара,</li>
+                  <li>описание товара,</li>
+                  <li>наличие на складе,</li>
+                  <li>цвет,</li>
+                  <li>количество.</li>
+                </ul></div>
+                <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                <div class="info-extra-price">
+                  <div class="price-new"><span>210 руб.</span></div>
+                  <div class="price-old"><span>300 руб.</span></div>
+                </div>
+                <div class="info-extra-pay">
+                  <button class="info-extra-btn-pay scr_btn-extra">Заказать</button>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+           </div> 
+          </div>
+          <div class="products__inner-info-item scr_pr-in-item">
+            <div class="products__inner-info-icon scr_pr-in-icon"><img src="images/home-prod-2.jpg" alt=""></div>
+            <div class="products__inner-info-title"><h3>Облепиха замороженная</h3></div>
+            <div class="products__inner-info-text">
+              <p>
+                Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим, мочегонным, отхаркивающим.
+              </p>
+            </div>
+            <div class="products__inner-info-price">
+              <div class="old-price"><span>500 руб.</span></div>
+              <div class="new-price"><span>310 руб.</span></div>
+            </div>
+            <div class="products__inner-info-pay">
+              <button class="btn-pay popup-btn">Заказать</button>
+            </div>
+            <div class="products__wrapper-info-extra scr_pr-wp-extra">
+           <div class="products__inner-info-extra">
+            <div class="closed"></div>
+            <div class="info-extra-left">
+              <img src="images/home-prod-2.jpg" alt="">
+            </div>
+            <div class="info-extra-right">
+              <div class="info-extra-title"><h3>Облепиха свежая</h3></div>
+              <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+              <div class="info-extra-list"><ul>
+                <li>свойства товара,</li>
+                <li>параметры товара,</li>
+                <li>описание товара,</li>
+                <li>наличие на складе,</li>
+                <li>цвет,</li>
+                <li>количество.</li>
+              </ul></div>
+              <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+              <div class="info-extra-price">
+                <div class="price-new"><span>310 руб.</span></div>
+                <div class="price-old"><span>500 руб.</span></div>
+              </div>
+              <div class="info-extra-pay">
+                <button class="info-extra-btn-pay scr_btn-extra">Заказать</button>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+         </div> 
+        </div>
+        <div class="products__inner-info-item scr_pr-in-item">
+          <div class="products__inner-info-icon scr_pr-in-icon"><img src="images/home-prod-3.jpg" alt=""></div>
+          <div class="products__inner-info-title"><h3>Облепиха сушеная</h3></div>
+          <div class="products__inner-info-text">
+            <p>
+              Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим, мочегонным, отхаркивающим.
+            </p>
+          </div>
+          <div class="products__inner-info-price">
+            <div class="old-price"><span>300 руб.</span></div>
+            <div class="new-price"><span>150 руб.</span></div>
+          </div>
+          <div class="products__inner-info-pay">
+            <button class="btn-pay popup-btn">Заказать</button>
+          </div>
+          <div class="products__wrapper-info-extra scr_pr-wp-extra">
+         <div class="products__inner-info-extra">
+          <div class="closed"></div>
+          <div class="info-extra-left">
+            <img src="images/home-prod-3.jpg" alt="">
+          </div>
+          <div class="info-extra-right">
+            <div class="info-extra-title"><h3>Облепиха сушеная</h3></div>
+            <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+            <div class="info-extra-list"><ul>
+              <li>свойства товара,</li>
+              <li>параметры товара,</li>
+              <li>описание товара,</li>
+              <li>наличие на складе,</li>
+              <li>цвет,</li>
+              <li>количество.</li>
+            </ul></div>
+            <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+            <div class="info-extra-price">
+              <div class="price-new"><span>150 руб.</span></div>
+              <div class="price-old"><span>300 руб.</span></div>
+            </div>
+            <div class="info-extra-pay">
+              <button class="info-extra-btn-pay scr_btn-extra">Заказать</button>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+       </div> 
+      </div>
+        </div>
+      </section>
+      <!-- home-cross -->
+      <section class="cross main-section">
+        <div class="cross__wrapper">
+          <div class="cross__wrapper-catalog">
+            <div class="cross__catalog-btn"><a class="catalog-btn" href="catalog.html">Перейти в каталог</a></div>
+          </div>
+        </div>
+      </section>
+      <!-- home-gallery -->
+      <section class="home-gallery main-section">
+        <div class="home-gallery__inner-content title-section">
+          <div class="home-gallery__inner-content-title">
+            <h2>Свежие, замороженные и сушеные ягоды</h2>
+          </div>
+          <div class="home-gallery__inner-content-subtitle">
+            <span>Рекомендуйте нас своим друзьям и знакомым, приобретайте наш товар по доступным ценам</span>
+          </div>
+        </div>
+        <div class="home-gallery__inner-gallery">
+          <div class="slider-item gl-item"><img src="images/berry-pictur-1.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-2.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-3.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-4.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-5.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-6.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-7.jpg" alt="" /></div>
+          <div class="slider-item gl-item"><img src="images/berry-pictur-8.jpg" alt="" /></div>
+        </div>
+        <div class="popup_img">
+          <div class="preload"></div>
+          <img class="popup_img-hide" src="" alt="" />
+          <div class="popup_img-prev btn-gallery"></div>
+          <div class="popup_img-next btn-gallery"></div>
+          <div class="popup_img-wrap">
+            <img src="" alt="" />
+            <div class="popup_img-closed" data-title="закрыть"></div>
+          </div>
+        </div>
+      </section>
+      <!-- home-request -->
+      <section class="request main-section">
+        <div class="request__wrapper">
+          <div class="request__inner-form scr_popup-in">
+              <div class="request__popur-form-title"><span>У вас есть вопросы? Просто оставьте заявку на сайте. Наш специалист свяжется с вами!</span></div>
+                <form action="/" class="form scr_fo">
+                  <div class="request__form-filds scr_form-fi">
+                    <div class="request__fild-contener scr_fi-con">
+                      <div class="request__fild-error scr_fi-er">
+                        <span class="fild-error-one scr_fi-er-one"></span>
+                      </div>
+                      <div class="fild scr_fi">
+                        <input type="text" placeholder="Введите имя" class="request__input-all src_in-all" data-validatio="name" />
+                      </div>
+                    </div>
+                    <div class="request__fild-contener scr_fi-con">
+                      <div class="request__fild-error scr_fi-er">
+                        <span class="fild-error-two scr_fi-er-two"></span>
+                      </div>
+                      <div class="fild scr_fi">
+                        <input type="text" placeholder="Ваш телефон: xxx-xx-xx" class="request__input-all src_in-all" data-validatio="phone" />
+                      </div>
+                    </div>
+                    <div class="request__fild-contener scr_fi-con">
+                      <div class="request__fild-error scr_fi-er">
+                        <span class="fild-error-three scr_fi-er-three"></span>
+                      </div>
+                      <div class="fild scr_fi">
+                        <input type="text" placeholder="Ваш mail@mail.ru" class="request__input-all src_in-all" data-validatio="email" />
+                      </div>
+                    </div>
+                    <div class="request__fild-contener-btn src_con-btn">
+                      <button>Отправить</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="request__form-text">
+                  <span>Нажимая на кнопку, Вы принимаете</span>
+                  <a href="">Положение</a>
+                  <span>и</span>
+                  <a href="">Согласие</a>
+                  <span>на обработку персональных данных.</span>
+                </div>
+          </div>
+        </div>
+      </section>
+      <!-- home-about -->
+      <section class="about main-section">
+        <div class="about__wrapper">
+          <div class="about__inner-content">
+            <div class="about__inner-content-title">
+              <h2>Отзывы наших клиентов</h2>
+            </div>
+            <div class="about__inner-content-subtitle">
+              <span>Нам очень важно Ваше мнение!</span>
+            </div>
+            <div class="about-item">
+              <div class="about-item-pictur"><img src="images/home-about-1.jpg" alt="" /></div>
+              <div class="about-item-text">
+                <div class="text-title"><span>Анастасия, 25 лет</span></div>
+                <div class="text-subtitle">
+                  <p>
+                    Очень понравился магазин, доступные цены, большой выбор свежих, замороженных и сушеных ягод. Заказ доставили быстро, в течение трех дней после его оформления. Менеджер магазина помог определиться, какие ягоды лучше купить. Буду рекомендовать этот магазин своим друзьям и близким!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="about-item">
+              <div class="about-item-pictur"><img src="images/home-about-2.jpg" alt="" /></div>
+              <div class="about-item-text">
+                <div class="text-title"><span>Виктория, 32 года</span></div>
+                <div class="text-subtitle">
+                  <p>
+                    Очень понравился магазин, доступные цены, большой выбор свежих, замороженных и сушеных ягод. Заказ доставили быстро, в течение трех дней после его оформления. Менеджер магазина помог определиться, какие ягоды лучше купить. Буду рекомендовать этот магазин своим друзьям и близким!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__wrapper section">
+        <div class="footer__wrapper-menu">
+          <nav class="scrool">
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="btn-menu" href="index.html">ГЛАВНАЯ</a>
+              </li>
+              <li class="menu-item"><a class="btn-menu" href="catalog.html">КАТАЛОГ</a>
+              </li>
+              <li class="menu-item"><a class="btn-menu" href="terms.html">УСЛОВИЯ ПОКУПКИ</a>
+              </li>
+              <li class="menu-item"><a class="btn-menu" href="company.html">О НАШЕЙ КОМПАНИИ</a>
+              </li>
+              <li class="menu-item"><a class="btn-menu" href="contact.html">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__wrapper-contact">
+          <div class="contact__title">
+            <span>Наши контакты</span>
+          </div>
+          <div class="contact__text">
+            <span>ООО «СтройТрейд»</span>
+          </div>
+          <div class="contact__list">
+            <ul class="list">
+              <li>Адрес: г.Москва, ул. Центральная 1, офис 1</li>
+              <li>Телефон: 8 (800) 333 22 33</li>
+              <li>ОГРН 123456789012</li>
+              <li>ИНН 1234567890</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

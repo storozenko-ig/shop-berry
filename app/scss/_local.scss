@@ -1,0 +1,442 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../fonts/FjallaOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/static/EBGaramond-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@keyframes impulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0.8em 0;
+  }
+  10% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0.8em 0;
+  }
+  20% {
+    transform: scale(0.95);
+    box-shadow: 0 0 1.2em 0;
+  }
+  35% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0.3em 0;
+  }
+  50% {
+    transform: scale(0.9);
+    box-shadow: 0 0 1.3em 0;
+  }
+  64% {
+    transform: scale(1);
+    box-shadow: 0 0 1.2em 0;
+  }
+  70% {
+    transform: scale(0.95);
+    box-shadow: 0 0 1.2em 0;
+  }
+  80% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0.3em 0;
+  }
+  90% {
+    transform: scale(0.9);
+    box-shadow: 0 0 1.3em 0;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0.8em 0;
+  }
+}
+@keyframes impulse2 {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.1);
+    box-shadow: 0 0 1.3em 0;
+  }
+  25% {
+    transform: scale(0.95);
+    box-shadow: 0 0 1.2em 0;
+  }
+  40% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0.8em 0;
+  }
+  55% {
+    transform: scale(0.9);
+    box-shadow: 0 0 1.2em 0;
+  }
+  65% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0.8em 0;
+  }
+  75% {
+    transform: scale(0.95);
+    box-shadow: 0 0 1.2em 0;
+  }
+  85% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0.3em 0;
+  }
+  95% {
+    transform: scale(0.9);
+    box-shadow: 0 0 1.3em 0;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0.8em 0;
+  }
+}
+@keyframes puls {
+  0% {
+    box-shadow: rgb(254, 65, 128) 0.2em 0.2em 0.2em 0.2em;
+  }
+  10% {
+    box-shadow: rgb(236, 122, 160) 0.14em 0.14em 0.14em 0.14em;
+  }
+  20% {
+    box-shadow: rgb(254, 65, 128) 0.2em 0.2em 0.2em 0.2em;
+  }
+  30% {
+    box-shadow: rgb(236, 122, 160) 0.12em 0.12em 0.12em 0.12em;
+  }
+  40% {
+    box-shadow: rgb(254, 65, 128) 0.2em 0.2em 0.2em 0.2em;
+  }
+  50% {
+    box-shadow: rgb(236, 122, 160) 0.1em 0.1em 0.1em 0.1em;
+  }
+  60% {
+    box-shadow: rgb(254, 65, 128) 0.2em 0.2em 0.2em 0.2em;
+  }
+  70% {
+    box-shadow: rgb(236, 122, 160) 0.12em 0.12em 0.12em 0.12em;
+  }
+  80% {
+    box-shadow: rgb(254, 65, 128) 0.2em 0.2em 0.2em 0.2em;
+  }
+  90% {
+    box-shadow: rgb(236, 122, 160) 0.14em 0.14em 0.14em 0.14em;
+  }
+  100% {
+    box-shadow: rgb(254, 65, 128) 0.2em 0.2em 0.2em 0.2em;
+  }
+}
+@mixin icon-call_me {
+  .icon-phone {
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 9998;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    .cross-form {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .icon {
+      background: url("../images/icon-phone.png") no-repeat center;
+      background-size: 100%;
+      line-height: 80px;
+      display: inline-block;
+      font-size: inherit;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 25%;
+      right: 25%;
+    }
+  }
+  .circle_out,
+  .circle_in {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    right: 35px;
+    bottom: 20px;
+    z-index: 9998;
+  }
+  .circle_out {
+    box-shadow: 0 0 5px 0 rgb(240, 13, 107);
+    animation: impulse 5s 1s infinite;
+  }
+  .circle_in {
+    box-shadow: 0 0 3px 0 rgb(187, 14, 86);
+    animation: impulse2 5s 1s infinite;
+  }
+}
+@mixin header-btn-callback-hover {
+  &:after {
+    content: url("../images/fa-phone.png");
+    font-family: Linearicons-Free;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.1em;
+  }
+  &:hover span {
+    max-width: 150px;
+    opacity: 1;
+    margin-right: 6px;
+  }
+}
+@mixin btn-menu-hover {
+  &:hover {
+    background: rgb(254, 65, 128);
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+}
+@mixin btn-callback($paddingWH, $paddingLR, $fontSize) {
+  padding: $paddingWH $paddingLR;
+  font-size: $fontSize;
+  position: relative;
+  border-radius: 0.88em;
+  background: rgb(254, 64, 128);
+  opacity: 0.8;
+}
+
+@mixin btn-callback-hover {
+  &:hover {
+    box-shadow: 300px 0 0 0 rgb(254, 64, 128) inset;
+    color: white;
+    transition: 0.9s ease-in-out;
+    opacity: 1;
+  }
+}
+@mixin transform($img1, $img2) {
+  background: url($img1) no-repeat;
+  background-position: center center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  transition: 0.7s linear;
+  &:hover {
+    background: url($img2) no-repeat;
+    background-position: center center;
+    transform: rotateY(180deg);
+  }
+}
+@mixin btn-pay($width, $paddingWH, $paddingLR) {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 1.1em;
+  background: rgb(247, 96, 146);
+  border-radius: 0.88em;
+  max-width: $width;
+  padding: $paddingWH $paddingLR;
+  box-shadow: rgb(254, 65, 128) 0px 0.23em 0px 0.01em;
+  transition: 0.3s linear;
+  cursor: pointer;
+  &:hover {
+    box-shadow: none;
+    transition: 0.5s all;
+  }
+  button {
+    color: white;
+    background: inherit;
+    font-size: 1.1em;
+  }
+}
+@mixin popup_form {
+  display: none;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 125;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.5);
+  &-inner {
+    width: 360px;
+    height: auto;
+    background: #fff;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 70px;
+  }
+  .popur-form-closed {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    background: url("../images/icon-closed.png") no-repeat center;
+    background-size: 100%;
+    &:hover {
+      transform: rotate(720deg);
+      transition: all 600ms;
+    }
+  }
+  &-title {
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+  }
+  .fild-contener {
+    padding: 7px 0;
+    .fild-error {
+      margin-bottom: 2px;
+      color: rgb(206, 22, 22);
+      line-height: 1.5;
+      font-size: 14px;
+      width: calc(100%-30px);
+    }
+    .fild {
+      margin: 5px 0;
+      input {
+        width: 100%;
+        padding: 10px 5px;
+        outline: none;
+        border: 1px solid #666;
+        font-size: 15px;
+      }
+    }
+  }
+  .fild-contener-btn {
+    margin: 20px auto 0;
+    width: 200px;
+    height: 40px;
+    max-width: 92%;
+    position: relative;
+    line-height: 34px;
+    text-align: center;
+    overflow: hidden;
+    button {
+      background-color: rgb(159, 136, 126);
+      border-radius: 0px;
+      box-shadow: rgb(129, 106, 96) 0px 0.25em 0px 0.01em;
+      color: rgb(255, 255, 255);
+      border-color: transparent;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        transform: translateY(-5px);
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+}
+@mixin popup_img-movie {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  opacity: 1;
+  z-index: 125;
+  .preload {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    border-radius: 3px;
+  }
+  &-hide {
+    display: none;
+  }
+  .btn-gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10;
+    &:hover {
+      transition: background-color 0.3s ease;
+    }
+  }
+  &-prev {
+    background: url("../images/left.png") no-repeat;
+    background-size: 5em;
+    left: 70px;
+  }
+  &-next {
+    background: url("../images/right.png") no-repeat;
+    background-size: 5em;
+    right: 70px;
+  }
+  &-wrap {
+    display: inline-block;
+    max-width: 85%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 70px;
+    img {
+      max-width: 800px;
+      max-height: 600px;
+    }
+  }
+  .popup_img-closed {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/icon-closed.png") no-repeat center;
+    background-size: 100%;
+    cursor: pointer;
+    &:hover {
+      transform: rotate(360deg);
+      transition: all 600ms;
+    }
+  }
+}
+@mixin wallpaper($img) {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($img) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 40px;
+  position: relative;
+}
+@mixin fa-icon-menu($img, $opacity, $width, $height) {
+  background: url($img) no-repeat;
+  background-size: 100%;
+  width: $width;
+  height: $height;
+  margin: 0;
+  display: inline-block;
+  opacity: $opacity;
+}

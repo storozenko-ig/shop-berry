@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop-berry</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="popup-form scr_popup-fo">
+      <div class="popup-form-inner scr_popup-in">
+        <div class="popur-form-closed scr_popup-cl"></div>
+        <div class="popur-form-title"><span>Оставить заявку</span></div>
+        <form action="/" class="form scr_fo">
+          <div class="form-filds scr_form-fi">
+            <div class="fild-contener scr_fi-con">
+              <div class="fild-error scr_fi-er">
+                <span class="fild-error-one scr_fi-er-one"></span>
+              </div>
+              <div class="fild scr_fi">
+                <input type="text" placeholder="Введите имя" class="input-all src_in-all" data-validatio="name" />
+              </div>
+            </div>
+            <div class="fild-contener scr_fi-con">
+              <div class="fild-error scr_fi-er">
+                <span class="fild-error-two scr_fi-er-two"></span>
+              </div>
+              <div class="fild scr_fi">
+                <input type="text" placeholder="Ваш телефон: xxx-xx-xx" class="input-all src_in-all" data-validatio="phone" />
+              </div>
+            </div>
+            <div class="fild-contener scr_fi-con">
+              <div class="fild-error scr_fi-er">
+                <span class="fild-error-three scr_fi-er-three"></span>
+              </div>
+              <div class="fild scr_fi">
+                <input type="text" placeholder="Ваш mail@mail.ru" class="input-all src_in-all" data-validatio="email" />
+              </div>
+            </div>
+            <div class="fild-contener-btn src_con-btn">
+              <button>Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="icon-call_me">
+      <div class="circle_out"></div>
+      <div class="icon-phone">
+        <div class="icon"></div>
+        <a href="" class="cross-form"></a>
+      </div>
+      <div class="circle_in"></div>
+    </div>
+    <!-- header -->
+    <header class="header">
+      <div class="header__wrapper-top section">
+        <div class="header__wrapper-menu-mobile-bth"></div>
+        <div class="header__wrapper-logo">
+          <div class="header__wrapper-logo-inner"><img src="images/logo.png" alt="" /></div>
+        </div>
+        <div class="clear"></div>
+        <div class="header__wrapper-menu-phone">
+          <div class="header__wrapper-callback">
+            <div class="header-callback">
+              <button class="header-top-btn popup-btn"><span>Перезвони мне</span></button>
+              <span class="header-phone"><a href="tel:+78003332233">8(800)333-22-33</a></span>
+            </div>
+          </div>
+          <div class="header__wrapper-menu">
+            <nav class="scrool">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a class="btn-menu" href="index.html"
+                    ><div class="fa-menu"></div>
+                    ГЛАВНАЯ</a
+                  >
+                </li>
+                <li class="menu-item catalog-menu">
+                  <a class="btn-menu" href="catalog.html"
+                    ><div class="fa-menu"></div>
+                    КАТАЛОГ</a
+                  >
+                  <ul class="submenu">
+                    <li><a href="">ГРИБЫ</a></li>
+                    <li class="submenu-berry">
+                      <a href="">ЯГОДА</a>
+                      <ul class="submenu-berry-list">
+                        <li>Клубника</li>
+                        <li>Земляника</li>
+                      </ul>
+                    </li>
+                    <li><a href="">ФРУКТЫ</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="btn-menu" href="terms.html"
+                    ><div class="fa-menu"></div>
+                    УСЛОВИЯ ПОКУПКИ</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="btn-menu" href="company.html"
+                    ><div class="fa-menu"></div>
+                    О НАШЕЙ КОМПАНИИ</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a class="btn-menu" href="contact.html"
+                    ><div class="fa-menu"></div>
+                    КОНТАКТЫ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__wrapper-menu-mobile">
+            <div class="header__wrapper-logo-mobile"><img src="images/logo.png" alt="" /></div>
+            <div class="menu-mobile">
+              <nav class="scroll">
+                <ul class="menu-mobile-list">
+                  <li class="menu-item-mobile"><a href="">ГЛАВНАЯ</a></li>
+                  <li class="menu-item-mobile"><a href="">КАТАЛОГ</a></li>
+                  <li class="menu-item-mobile"><a href="">УСЛОВИЯ ПОКУПКИ</a></li>
+                  <li class="menu-item-mobile"><a href="">О НАШЕЙ КОМПАНИИ</a></li>
+                  <li class="menu-item-mobile"><a href="">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__wallpaper-catalog">
+        <div class="header__wrapper-bottom section">
+          <div class="header__wrapper-bottom-title header-catalog-title">
+            <h1>
+                Каталог свежих, замороженных и сушеных ягод с доставкой
+            </h1>
+          </div>
+          <div class="header__wrapper-bottom-subtitle">
+            <span class="header-subtitle">Осуществляем доставку по всей территории России</span>
+          </div>
+          <div class="header__wallpaper-callback">
+            <div class="header-wallpaper-callback"><button class="header-bottom-btn popup-btn">Сделать заказ</button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- catalog-discount -->
+      <section class="discount main-section">
+        <div class="discount__inner">
+          <div class="discount__inner-pictur"><img src="images/discount-сatalog.jpg" alt="" /></div>
+          <div class="discount__inner-content">
+            <div class="discount__inner-content-title">
+              <h2>Скидка на первый заказ - 10%</h2>
+            </div>
+            <div class="discount__inner-content-text">
+              <p>
+                Покупатель, который оформляет заказ в нашем магазине впервые, может воспользоваться скидкой в размере 10%. Скидка действует на все виды ягод,
+                кроме исключений. К исключениям относятся ягоды, которые находятся в категории "Популярное".​​​​​​​
+              </p>
+            </div>
+            <div class="discount__inner-content-subtext">
+              <span>Успейте сделать заказ. Предложение ограничено!</span>
+            </div>
+            <div class="discount__inner-content-callback">
+              <button class="btn-callback popup-btn">Хочу получить скидку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clear"></div>
+      <!-- catalog-products-one -->
+      <section id="fresh-berry" class="catalog-products products-section">
+        <div class="catalog-products__inner">
+          <div class="catalog-products__inner-content title-section">
+            <div class="catalog-products__inner-content-title">
+              <h2>Купить ягоды с доставкой на дом</h2>
+            </div>
+            <div class="catalog-products__inner-content-subtitle">
+              <span>В нашем магазине представлен большой выбор свежих, замороженных и сушеных ягод</span>
+            </div>
+          </div>
+          <div class="catalog-products__inner-info">
+            <div class="catalog-products__inner-info-menu">
+               <div class="catalog-products__inner-info-menu-title"><span>Меню</span></div> 
+              <nav class="scroll">
+                <ul>
+                  <li><div class="fresh-berry"></div><a href="#fresh-berry">Свежие ягоды</a></li>
+                  <li><div class="ice-berry"></div><a href="#ice-berry">Замароженные ягоды</a></li>
+                  <li><div class="dried-berry"></div><a href="#dried-berry">Сушеные ягоды</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-1.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Голубика свежая</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>300 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra scr_pr-wp-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-1.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Голубика свежая</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>300 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay scr_btn-extra">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-2.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Малина свежая</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>200 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra scr_pr-wp-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-2.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Малина свежая</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>200 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay scr_btn-extra">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-3.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Вишня свежая</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>150 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra scr_pr-wp-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-3.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Вишня свежая</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>300 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay scr_btn-extra">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- catalog-products-two -->
+      <section id="ice-berry" class="catalog-products products-section">
+        <div class="catalog-products__inner">
+          <div class="catalog-products__inner-info">
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-4.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Голубика замороженная</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>100 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-4.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Голубика замороженная</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>100 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-5.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Малина замороженная</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>175 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-5.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Малина замороженная/h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>175 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-6.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Вишня замороженная</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>169 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-6.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Вишня замороженная</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>169 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-7.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Виноград замороженный</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>190 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-7.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Виноград замороженный</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>190 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- catalog-products-three -->
+      <section id="dried-berry" class="catalog-products products-section">
+        <div class="catalog-products__inner">
+          <div class="catalog-products__inner-info">
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-8.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Голубика сушеная</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>120 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-8.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Голубика сушеная</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>125 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-9.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Малина сушеная</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>115 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-9.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Малина сушеная<h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>115 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-10.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Вишня сушеная</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>158 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-10.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Вишня сушеная</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>158 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-products__inner-info-item scr_pr-in-item">
+              <div class="catalog-products__inner-info-icon scr_pr-in-icon"><img src="images/catalog-prod-11.jpg" alt="" /></div>
+              <div class="catalog-products__inner-info-title"><h3>Виноград сушеный</h3></div>
+              <div class="catalog-products__inner-info-text">
+                <p>
+                  Ягоды содержат витамины, антиоксиданты и клетчатку. Эфирные масла в некоторых ягодах обладают лечебными свойствами, например, антисептическим,
+                  мочегонным, отхаркивающим.
+                </p>
+              </div>
+              <div class="catalog-products__inner-info-price">
+                <div class="price"><span>170 руб./200 г</span></div>
+              </div>
+              <div class="catalog-products__inner-info-pay">
+                <button class="btn-pay popup-btn">Заказать</button>
+              </div>
+              <div class="products__wrapper-info-extra">
+                <div class="products__inner-info-extra">
+                  <div class="closed"></div>
+                  <div class="info-extra-left">
+                    <img src="images/catalog-prod-11.jpg" alt="" />
+                  </div>
+                  <div class="info-extra-right">
+                    <div class="info-extra-title"><h3>Виноград сушеный</h3></div>
+                    <div class="info-extra-text"><p>Подробное описание продукта. Здесь вы можете расписать:</p></div>
+                    <div class="info-extra-list">
+                      <ul>
+                        <li>свойства товара,</li>
+                        <li>параметры товара,</li>
+                        <li>описание товара,</li>
+                        <li>наличие на складе,</li>
+                        <li>цвет,</li>
+                        <li>количество.</li>
+                      </ul>
+                    </div>
+                    <div class="info-extra-text"><p>Напишите их тут. И будет у вас не просто сайт, а интернет-магазин.</p></div>
+                    <div class="info-extra-price">
+                      <div class="price-extra"><span>170 руб./200 г</span></div>
+                    </div>
+                    <div class="info-extra-pay">
+                      <button class="info-extra-btn-pay popup-btn">Заказать</button>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="request main-section">
+        <div class="request__wrapper">
+          <div class="request__inner-form scr_popup-in">
+            <div class="request__popur-form-title"><span>У вас есть вопросы? Просто оставьте заявку на сайте. Наш специалист свяжется с вами!</span></div>
+            <form action="/" class="form scr_fo">
+              <div class="request__form-filds scr_form-fi">
+                <div class="request__fild-contener scr_fi-con">
+                  <div class="request__fild-error scr_fi-er">
+                    <span class="fild-error-one scr_fi-er-one"></span>
+                  </div>
+                  <div class="fild scr_fi">
+                    <input type="text" placeholder="Введите имя" class="request__input-all src_in-all" data-validatio="name" />
+                  </div>
+                </div>
+                <div class="request__fild-contener scr_fi-con">
+                  <div class="request__fild-error scr_fi-er">
+                    <span class="fild-error-two scr_fi-er-two"></span>
+                  </div>
+                  <div class="fild scr_fi">
+                    <input type="text" placeholder="Ваш телефон: xxx-xx-xx" class="request__input-all src_in-all" data-validatio="phone" />
+                  </div>
+                </div>
+                <div class="request__fild-contener scr_fi-con">
+                  <div class="request__fild-error scr_fi-er">
+                    <span class="fild-error-three scr_fi-er-three"></span>
+                  </div>
+                  <div class="fild scr_fi">
+                    <input type="text" placeholder="Ваш mail@mail.ru" class="request__input-all src_in-all" data-validatio="email" />
+                  </div>
+                </div>
+                <div class="request__fild-contener-btn src_con-btn">
+                  <button>Отправить</button>
+                </div>
+              </div>
+            </form>
+            <div class="request__form-text">
+              <span>Нажимая на кнопку, Вы принимаете</span>
+              <a href="">Положение</a>
+              <span>и</span>
+              <a href="">Согласие</a>
+              <span>на обработку персональных данных.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__wrapper section">
+        <div class="footer__wrapper-menu">
+          <nav class="scrool">
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="btn-menu" href="index.html">ГЛАВНАЯ</a></li>
+              <li class="menu-item"><a class="btn-menu" href="catalog.html">КАТАЛОГ</a></li>
+              <li class="menu-item"><a class="btn-menu" href="terms.html">УСЛОВИЯ ПОКУПКИ</a></li>
+              <li class="menu-item"><a class="btn-menu" href="company.html">О НАШЕЙ КОМПАНИИ</a></li>
+              <li class="menu-item"><a class="btn-menu" href="contact.html">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__wrapper-contact">
+          <div class="contact__title">
+            <span>Наши контакты</span>
+          </div>
+          <div class="contact__text">
+            <span>ООО «СтройТрейд»</span>
+          </div>
+          <div class="contact__list">
+            <ul class="list">
+              <li>Адрес: г.Москва, ул. Центральная 1, офис 1</li>
+              <li>Телефон: 8 (800) 333 22 33</li>
+              <li>ОГРН 123456789012</li>
+              <li>ИНН 1234567890</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

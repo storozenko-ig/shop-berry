@@ -199,7 +199,7 @@
   &:hover {
     background: rgb(254, 65, 128);
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 }
 @mixin btn-callback($paddingWH, $paddingLR, $fontSize) {
